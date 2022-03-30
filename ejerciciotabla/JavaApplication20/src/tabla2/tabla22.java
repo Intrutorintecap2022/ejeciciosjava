@@ -166,7 +166,8 @@ public class tabla22 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnmodificarActionPerformed
 
     private void btnbuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscarActionPerformed
-       fila=tbldatos.getSelectedRow();
+      //recorda crear la variable fila arriba golbar con -1
+        fila=tbldatos.getSelectedRow();
          if(tbldatos.getSelectedRow()!=-1){
         txtnombre.setText(tbldatos.getValueAt(fila, 0).toString());
           txtedad.setText(tbldatos.getValueAt(fila, 1).toString());
